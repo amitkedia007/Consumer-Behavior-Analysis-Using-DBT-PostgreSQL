@@ -1,21 +1,61 @@
 
 version: 2
 
-models:
-  - name: my_first_dbt_model
-    description: "A starter dbt model"
-    columns:
-      - name: id
-        description: "The primary key for this table"
-        tests:
-          - unique
-          - not_null
+sources:
+  - name: customer_data
+    description: "Customer data model from E Commerce Dataset"
+    database: customer_data
+    schema: public
+    tables:
+      - name: customer_table
+        description: "This is Customer table"
+        columns:
+          - name: CustomerID
+            description: "Unique identifier for the customer"
+            tests:
+              - not_null
+              - unique
+          - name: Churn
+            description: "Indicator of customer churn"
+            tests:
+              - not_null
+          - name: Tenure
+            description: "Tenure of the customer"
+          - name: PreferredLoginDevice
+            description: "Preferred login device of the customer"
+          - name: CityTier
+            description: "City tier"
+          - name: WarehouseToHome
+            description: "Distance from warehouse to home"
+          - name: PreferredPaymentMode
+            description: "Preferred payment mode"
+          - name: Gender
+            description: "Gender of the customer"
+          - name: HourSpendOnApp
+            description: "Hours spent on app"
+          - name: NumberOfDeviceRegistered
+            description: "Number of devices registered"
+          - name: PreferedOrderCat
+            description: "Preferred order category"
+          - name: SatisfactionScore
+            description: "Satisfaction score"
+          - name: MaritalStatus
+            description: "Marital status of the customer"
+          - name: NumberOfAddress
+            description: "Number of addresses"
+          - name: Complain
+            description: "Complaint indicator"
+          - name: OrderAmountHikeFromlastYear
+            description: "Order amount hike from last year"
+          - name: CouponUsed
+            description: "Number of coupons used"
+          - name: OrderCount
+            description: "Order count"
+          - name: DaySinceLastOrder
+            description: "Days since last order"
+          - name: CashbackAmount
+            description: "Cashback amount"
+            tests:
+              - not_null
 
-  - name: my_second_dbt_model
-    description: "A starter dbt model"
-    columns:
-      - name: id
-        description: "The primary key for this table"
-        tests:
-          - unique
-          - not_null
+

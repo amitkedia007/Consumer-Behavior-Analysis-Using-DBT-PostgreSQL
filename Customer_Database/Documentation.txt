@@ -1,0 +1,30 @@
+To activate dbt-env => 
+Go to the envs in the End to End machine learning project's folder and just run dbt-env\Scripts\activate
+
+To run the dbt type command: dbt run
+to debug the schema and paths of the project: dbt debug
+
+To check if the required file is their use the command: dbt --version
+
+
+
+## First: 
+
+I made a demographic_analysis.sql file in which we are just going to see the average retention rate among men vs women vs the city tier. 
+
+using this command I got to see the results: 
+SELECT * FROM public.demographic_analysis;
+
+The output is: 
+gender	citytier	retention_rate
+Female	1	0.880721221
+Female	2	0.675675676
+Female	3	0.791780822
+Male	1	0.838129496
+Male	2	0.857142857
+Male	3	0.782258065
+
+From this output we can conclude that Female living in the tier 1 cities shows more retention than male in any tier cities. 
+
+Female in the tier 2 cities shows significantly less retention so the reason needs to be investigate. 
+
