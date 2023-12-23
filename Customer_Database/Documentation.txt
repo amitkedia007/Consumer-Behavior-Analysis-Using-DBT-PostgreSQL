@@ -24,7 +24,108 @@ Male	1	0.838129496
 Male	2	0.857142857
 Male	3	0.782258065
 
-From this output we can conclude that Female living in the tier 1 cities shows more retention than male in any tier cities. 
+Analysis: 
 
-Female in the tier 2 cities shows significantly less retention so the reason needs to be investigate. 
+Overall Retention by Gender:
+Female customers have retention rates of 88.07% in CityTier 1, 67.57% in CityTier 2, and 79.18% in CityTier 3.
+Male customers have retention rates of 83.81% in CityTier 1, 85.71% in CityTier 2, and 78.23% in CityTier 3.
+
+CityTier Impact:
+For Female customers, the highest retention rate is in CityTier 1 (88.07%) and the lowest in CityTier 2 (67.57%).
+For Male customers, the highest retention rate is in CityTier 2 (85.71%) and the lowest in CityTier 3 (78.23%).
+
+Gender Differences:
+In CityTier 1, Female customers have a slightly higher retention rate than Male customers.
+In CityTier 2, Male customers have a significantly higher retention rate than Female customers.
+In CityTier 3, the retention rates for both genders are closer, but Female customers have a slightly higher rate.
+
+CityTier Preferences:
+CityTier 2 appears to be less favorable for Female customers compared to other tiers.
+Male customers show relatively consistent retention rates across all CityTiers, with a slight preference for CityTier 2.
+
+Implications for Business Strategy:
+Targeted Marketing: Different marketing strategies may be required for different CityTiers, especially focusing on CityTier 2 for Female customers to improve retention.
+Customer Experience Improvement: Investigate potential reasons for lower retention in specific tiers and genders. This might involve surveying customer satisfaction, service quality, product availability, etc.
+Product and Service Tailoring: Consider tailoring products or services to better suit the preferences of customers in different CityTiers or of different genders.
+
+Further Analysis:
+Explore Underlying Causes: Investigate why certain CityTiers have lower retention rates for specific genders. This might involve more detailed data analysis or qualitative research.
+Additional Factors: Consider analyzing other factors (like age, income level, product preferences) that might also impact customer retention.
+
+
+
+Customer_behaviour_analysis.sql : 
+Order Count:
+
+Female customers in CityTier 1 have the highest average order count (3.04), while those in CityTier 2 have the lowest (2.38).
+Male customers show less variation across CityTiers in average order count, with the highest in CityTier 3 (3.09) and the lowest in CityTier 2 (2.91).
+Cashback Amount:
+
+Female customers in CityTier 2 receive the highest average cashback (194.98), whereas those in CityTier 1 receive the lowest (180.06).
+Male customers in CityTier 2 also receive slightly higher average cashback than in other tiers.
+Coupon Usage:
+
+Female customers in CityTier 3 use more coupons on average (2.03) compared to those in other tiers.
+Male customers in CityTier 1 and 3 use coupons more frequently than those in CityTier 2.
+Satisfaction Score:
+
+Female customers in CityTier 1 have a slightly higher average satisfaction score (3.14) compared to other tiers.
+Male customers show similar satisfaction scores across all CityTiers, with a slightly higher score in CityTier 2 (3.14).
+Total Customers:
+
+The total number of customers varies significantly across different segments, with the highest being Male customers in CityTier 1 (1864) and the lowest being Female customers in CityTier 2 (50).
+Business Implications:
+Targeted Marketing and Promotions: CityTier 2, especially for Female customers, shows lower average order counts but higher cashback amounts and coupon usage. This may indicate a more price-sensitive segment where promotions could be effective.
+Customer Satisfaction Efforts: While satisfaction scores are relatively consistent, small variations could guide improvements in customer service or product offerings.
+Resource Allocation: The significant differences in customer count across segments suggest that resources and marketing efforts could be allocated differently to optimize impact.
+Understanding Customer Behavior: The differences in order count and coupon usage across genders and city tiers could reflect varying shopping habits and preferences that can inform product, marketing, and sales strategies.
+Further Analysis:
+Deeper Dive into High and Low Segments: Further investigate the behavior of segments with particularly high or low metrics to understand the driving factors.
+Correlate with Other Data: If more data is available (e.g., specific product categories, time of purchases, customer feedback), correlating these metrics with such data could yield richer insights.
+
+-- product_preferences_analysis
+
+Churn Rate Variations:
+
+"Fashion" and "Mobile Phone" categories have higher churn rates, especially in CityTier 2 and 3.
+"Grocery" and "Laptop & Accessory" categories show relatively lower churn rates.
+Order Count Insights:
+
+"Fashion" category has a higher average order count among females in CityTier 3.
+"Grocery" and "Others" categories have higher order counts in general, indicating frequent purchases.
+Gender Differences:
+
+Male customers show higher churn rates in "Mobile" and "Mobile Phone" categories across all CityTiers.
+Female customers in "Fashion" and "Mobile" categories exhibit higher churn rates, especially in higher CityTiers.
+Product Category Preference:
+
+"Laptop & Accessory" and "Grocery" are popular categories with relatively steady order counts and lower churn rates.
+"Mobile" and "Mobile Phone" categories show higher churn, possibly indicating competitive markets or customer dissatisfaction.
+CityTier Impact:
+
+Higher CityTiers (2 and 3) generally show increased churn rates, particularly in "Fashion", "Mobile", and "Mobile Phone" categories.
+Business Implications:
+Customer Retention Strategies: Focus on reducing churn in high-churn categories by improving product offerings, customer service, or pricing strategies.
+Targeted Marketing: Tailor marketing efforts based on popular categories in different CityTiers and among different genders.
+Product Focus: Consider emphasizing products in categories with lower churn rates and higher order counts.
+Further Analysis:
+Investigate specific reasons for high churn rates in certain categories and CityTiers.
+Analyze if there are any external factors (like seasonal trends, promotional campaigns) affecting these patterns.
+
+
+-- tenure_engagement_analysis
+
+High Retention in Specific Groups: Customers with longer tenure (e.g., more than 10 years) and higher app usage (e.g., 3-4 hours) generally show higher retention rates across both genders and CityTiers.
+
+Gender and CityTier Trends: Both Male and Female customers in CityTier 1 and 3 exhibit higher retention rates with increasing tenure and app usage.
+
+Initial Engagement: New customers (Tenure = 0) show varied retention rates, suggesting the importance of initial engagement strategies.
+
+App Usage Correlation: Higher app usage seems correlated with better retention, especially in customers with mid to high tenure.
+
+Segment-Specific Strategies: Tailored strategies for different tenure and app usage segments may enhance retention, considering the distinct patterns observed in different groups.
+
+
+
+
 
