@@ -126,6 +126,52 @@ App Usage Correlation: Higher app usage seems correlated with better retention, 
 Segment-Specific Strategies: Tailored strategies for different tenure and app usage segments may enhance retention, considering the distinct patterns observed in different groups.
 
 
+-- Payment mode analysis
 
+Churn Rate Variation:
 
+"Cash on Delivery" and "Credit Card" users have relatively lower churn rates, suggesting higher loyalty.
+"COD" and "E wallet" users exhibit higher churn rates.
+Order Frequency:
 
+"Credit Card" users place orders more frequently, followed by "E wallet" and "Cash on Delivery" users.
+"CC" users have the lowest average order count.
+Average Cashback Amount:
+
+"Credit Card" and "E wallet" users receive higher average cashback amounts.
+"CC" users have a lower average cashback amount.
+These insights suggest that payment modes like "Credit Card" and "Cash on Delivery" are associated with higher customer loyalty, whereas modes like "COD" and "E wallet" might need targeted strategies to reduce churn.
+
+-- marital status behavior analysis
+
+Churn Rate:
+
+"Divorced" and "Married" customers have lower churn rates (14.6% and 11.5% respectively), indicating higher loyalty.
+"Single" customers exhibit a higher churn rate (26.7%), suggesting they are more likely to stop purchasing.
+Order Frequency:
+
+"Divorced" customers place orders slightly more frequently than "Married" customers.
+"Single" customers have the lowest average order count.
+Average Cashback Amount:
+
+"Divorced" customers receive the highest average cashback, followed by "Married" and then "Single" customers
+
+order hike response analysis:
+
+Decreasing Churn with Higher Hikes: As the order amount hike percentage increases (especially beyond 19%), the churn rate generally decreases. This trend is particularly noticeable at 26% hike and above.
+
+Higher Order Counts with High Hikes: Higher order amount hikes (26% and above) are associated with significantly higher average order counts.
+
+Variability in Middle Ranges: There is some variability in churn rates in the middle range of hikes (11% to 25%), with no clear pattern.
+
+Customer Sensitivity: Customers might be less sensitive to higher hikes in order amounts, as indicated by lower churn rates and higher order counts at these levels.
+
+address count profile analysis:
+
+Moderate Address Counts: Customers with 1-4 addresses show relatively lower churn rates, indicating potential loyalty.
+
+Higher Churn with More Addresses: A notable increase in churn rate is observed as the number of addresses increases, particularly at 7 addresses and above.
+
+Order Frequency: Average order count tends to increase with more addresses, peaking at 11 addresses.
+
+Anomalies at Extreme Counts: High churn rates and low order counts at 19 and 20 addresses suggest anomalies or outliers in the data.
