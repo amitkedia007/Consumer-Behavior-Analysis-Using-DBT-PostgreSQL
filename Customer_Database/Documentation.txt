@@ -175,3 +175,20 @@ Higher Churn with More Addresses: A notable increase in churn rate is observed a
 Order Frequency: Average order count tends to increase with more addresses, peaking at 11 addresses.
 
 Anomalies at Extreme Counts: High churn rates and low order counts at 19 and 20 addresses suggest anomalies or outliers in the data.
+
+
+
+To conclude, 
+Gender and CityTier Impact: Female customers generally have higher retention rates than males, particularly in CityTier 1. CityTier 2 is less favorable for females.
+
+Product Category Preferences: Categories like "Fashion" and "Mobile Phone" have higher churn rates, indicating potential issues with customer satisfaction in these areas.
+
+Payment Mode Influence: Customers using "Credit Card" and "Cash on Delivery" exhibit higher loyalty and lower churn rates.
+
+Marital Status: "Married" and "Divorced" customers are more loyal than "Single" customers.
+
+Order Amount Hike: Customers are less sensitive to higher order amount hikes, showing lower churn rates at higher hike percentages.
+
+Address Count: A higher number of addresses correlates with increased churn rates.
+
+These insights suggest that demographic factors, product preferences, payment modes, marital status, and other customer attributes significantly influence shopping behavior and loyalty. Understanding these patterns can help in tailoring marketing strategies, improving customer satisfaction, and enhancing retention efforts. Businesses should focus on targeted approaches for different segments to address their unique preferences and behaviors.
